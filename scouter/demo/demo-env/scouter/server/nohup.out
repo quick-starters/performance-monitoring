@@ -12,458 +12,73 @@ WARNING: Please consider reporting this to the maintainers of com.sun.xml.bind.v
 WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
 WARNING: All illegal access operations will be denied in a future release
 System JRE version : 11.0.12
-17:26:06,153 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
-17:26:06,153 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.groovy]
-17:26:06,153 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [jar:file:/Users/addpage/Dev/quick-starters/performance-monitoring/scouter/demo/demo-env/scouter/server/./lib/scouter-webapp-2.6.2.jar!/logback.xml]
-17:26:06,164 |-INFO in ch.qos.logback.core.joran.spi.ConfigurationWatchList@3610b0b0 - URL [jar:file:/Users/addpage/Dev/quick-starters/performance-monitoring/scouter/demo/demo-env/scouter/server/./lib/scouter-webapp-2.6.2.jar!/logback.xml] is not of type file
-17:26:06,186 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - debug attribute not set
-17:26:06,187 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
-17:26:06,192 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [STDOUT]
-17:26:06,195 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
-17:26:06,212 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.rolling.RollingFileAppender]
-17:26:06,216 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [FILE_DAILY]
-17:26:06,222 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@697065337 - No compression will be used
-17:26:06,223 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@697065337 - Will use the pattern ./logs/webapp-%d{yyyy_MM_dd}.log for the active file
-17:26:06,225 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - The date pattern is 'yyyy_MM_dd' from file name pattern './logs/webapp-%d{yyyy_MM_dd}.log'.
-17:26:06,225 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Roll-over at midnight.
-17:26:06,241 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Setting initial period to Fri Oct 22 17:26:06 KST 2021
-17:26:06,242 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
-17:26:06,243 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[FILE_DAILY] - Active log file name: ./logs/webapp-2021_10_22.log
-17:26:06,243 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[FILE_DAILY] - File property is set to [null]
-17:26:06,244 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.rolling.RollingFileAppender]
-17:26:06,244 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [FILE_SIZE]
-17:26:06,246 |-INFO in ch.qos.logback.core.rolling.FixedWindowRollingPolicy@18dbbeee - No compression will be used
-17:26:06,247 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
-17:26:06,248 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[FILE_SIZE] - Active log file name: ./logs/webapp.log
-17:26:06,248 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[FILE_SIZE] - File property is set to [./logs/webapp.log]
-17:26:06,248 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.rolling.RollingFileAppender]
-17:26:06,248 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [FILE_SIZE_DAILY]
-17:26:06,251 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@195986162 - No compression will be used
-17:26:06,251 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@195986162 - Will use the pattern ./logs/webapp-%d{yyyy_MM_dd}-%i.log for the active file
-17:26:06,251 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@38883607 - The date pattern is 'yyyy_MM_dd' from file name pattern './logs/webapp-%d{yyyy_MM_dd}-%i.log'.
-17:26:06,251 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@38883607 - Roll-over at midnight.
-17:26:06,252 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@38883607 - Setting initial period to Fri Oct 22 17:26:06 KST 2021
-17:26:06,252 |-WARN in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@38883607 - SizeAndTimeBasedFNATP is deprecated. Use SizeAndTimeBasedRollingPolicy instead
-17:26:06,252 |-WARN in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@38883607 - For more information see http://logback.qos.ch/manual/appenders.html#SizeAndTimeBasedRollingPolicy
-17:26:06,253 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
-17:26:06,254 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[FILE_SIZE_DAILY] - Active log file name: ./logs/webapp-2021_10_22-0.log
-17:26:06,254 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[FILE_SIZE_DAILY] - File property is set to [null]
-17:26:06,254 |-INFO in ch.qos.logback.classic.joran.action.RootLoggerAction - Setting level of ROOT logger to INFO
-17:26:06,254 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [STDOUT] to Logger[ROOT]
-17:26:06,255 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [FILE_DAILY] to Logger[ROOT]
-17:26:06,255 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.
-17:26:06,255 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@7334d1f8 - Registering current configuration as safe fallback point
+19:52:39,157 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+19:52:39,157 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.groovy]
+19:52:39,157 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [jar:file:/Users/addpage/Dev/quick-starters/performance-monitoring/scouter/demo/demo-env/scouter/server/./lib/scouter-webapp-2.6.2.jar!/logback.xml]
+19:52:39,167 |-INFO in ch.qos.logback.core.joran.spi.ConfigurationWatchList@6c0fddc7 - URL [jar:file:/Users/addpage/Dev/quick-starters/performance-monitoring/scouter/demo/demo-env/scouter/server/./lib/scouter-webapp-2.6.2.jar!/logback.xml] is not of type file
+19:52:39,189 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - debug attribute not set
+19:52:39,190 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+19:52:39,194 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [STDOUT]
+19:52:39,198 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+19:52:39,214 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.rolling.RollingFileAppender]
+19:52:39,217 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [FILE_DAILY]
+19:52:39,232 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@2100849296 - No compression will be used
+19:52:39,234 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@2100849296 - Will use the pattern ./logs/webapp-%d{yyyy_MM_dd}.log for the active file
+19:52:39,236 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - The date pattern is 'yyyy_MM_dd' from file name pattern './logs/webapp-%d{yyyy_MM_dd}.log'.
+19:52:39,236 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Roll-over at midnight.
+19:52:39,246 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Setting initial period to Tue Oct 26 19:52:39 KST 2021
+19:52:39,246 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+19:52:39,247 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[FILE_DAILY] - Active log file name: ./logs/webapp-2021_10_26.log
+19:52:39,247 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[FILE_DAILY] - File property is set to [null]
+19:52:39,248 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.rolling.RollingFileAppender]
+19:52:39,248 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [FILE_SIZE]
+19:52:39,249 |-INFO in ch.qos.logback.core.rolling.FixedWindowRollingPolicy@750f5dd6 - No compression will be used
+19:52:39,251 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+19:52:39,251 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[FILE_SIZE] - Active log file name: ./logs/webapp.log
+19:52:39,251 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[FILE_SIZE] - File property is set to [./logs/webapp.log]
+19:52:39,251 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.rolling.RollingFileAppender]
+19:52:39,251 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [FILE_SIZE_DAILY]
+19:52:39,254 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@357813354 - No compression will be used
+19:52:39,254 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@357813354 - Will use the pattern ./logs/webapp-%d{yyyy_MM_dd}-%i.log for the active file
+19:52:39,254 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@7a0dae2 - The date pattern is 'yyyy_MM_dd' from file name pattern './logs/webapp-%d{yyyy_MM_dd}-%i.log'.
+19:52:39,254 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@7a0dae2 - Roll-over at midnight.
+19:52:39,255 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@7a0dae2 - Setting initial period to Tue Oct 26 19:52:39 KST 2021
+19:52:39,255 |-WARN in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@7a0dae2 - SizeAndTimeBasedFNATP is deprecated. Use SizeAndTimeBasedRollingPolicy instead
+19:52:39,255 |-WARN in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@7a0dae2 - For more information see http://logback.qos.ch/manual/appenders.html#SizeAndTimeBasedRollingPolicy
+19:52:39,257 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+19:52:39,258 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[FILE_SIZE_DAILY] - Active log file name: ./logs/webapp-2021_10_26-0.log
+19:52:39,258 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[FILE_SIZE_DAILY] - File property is set to [null]
+19:52:39,258 |-INFO in ch.qos.logback.classic.joran.action.RootLoggerAction - Setting level of ROOT logger to INFO
+19:52:39,258 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [STDOUT] to Logger[ROOT]
+19:52:39,258 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [FILE_DAILY] to Logger[ROOT]
+19:52:39,258 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.
+19:52:39,259 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@39f24c6c - Registering current configuration as safe fallback point
 
- 17:26:06.263 [scouter.server.http.HttpServer]  INFO  org.eclipse.jetty.util.log[192] - Logging initialized @1315ms to org.eclipse.jetty.util.log.Slf4jLog
- 17:26:06.306 [scouter.server.http.HttpServer]  INFO  scouterx.webapp.main.WebAppMain[270] - scouter webapp starting! Run-Mode:Embedded
- 17:26:06.322 [scouter.server.http.HttpServer]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@303fcc1a
- 17:26:06.326 [scouter.server.http.HttpServer]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@3f3f55f4 to 127.0.0.1:6100
- 17:26:06.340 [scouter.server.http.HttpServer]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@303fcc1a, stack:
- 17:26:06.341 [scouter.server.http.HttpServer]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@7427b53c
- 17:26:06.341 [scouter.server.http.HttpServer]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:1, scouterx.webapp.framework.client.net.TcpProxy@50fc1e
- 17:26:06.341 [scouter.server.http.HttpServer]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:2, scouterx.webapp.framework.client.net.TcpProxy@23f3d8e6
- 17:26:06.341 [scouter.server.http.HttpServer]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:3, scouterx.webapp.framework.client.net.TcpProxy@6e70fd44
- 17:26:06.341 [scouter.server.http.HttpServer]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:4, scouterx.webapp.framework.client.net.TcpProxy@27b72be3
- 17:26:06.341 [scouter.server.http.HttpServer]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:5, scouterx.webapp.framework.client.net.TcpProxy@20809307
- 17:26:06.342 [scouter.server.http.HttpServer]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@19363fcf to 127.0.0.1:6100
- 17:26:06.347 [scouter.server.http.HttpServer]  INFO  scouterx.webapp.main.WebAppMain[223] - Successfully log in to 127.0.0.1:6100
- 17:26:06.349 [scouterx.webapp.framework.client.model.AgentModelThread]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@536f021e to 127.0.0.1:6100
- 17:26:06.354 [scouterx.webapp.framework.client.model.AgentModelThread]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@5997696e to 127.0.0.1:6100
- 17:26:06.459 [scouter.server.http.HttpServer]  INFO  org.eclipse.jetty.server.Server[372] - jetty-9.4.6.v20170531
- 17:26:06.475 [scouter.server.http.HttpServer]  INFO  o.e.j.server.AbstractNCSARequestLog[230] - Opened /Users/addpage/Dev/quick-starters/performance-monitoring/scouter/demo/demo-env/scouter/server/logs/http-request-2021_10_22.log
- 17:26:06.482 [scouter.server.http.HttpServer]  INFO  org.eclipse.jetty.server.session[364] - DefaultSessionIdManager workerName=node0
- 17:26:06.482 [scouter.server.http.HttpServer]  INFO  org.eclipse.jetty.server.session[369] - No SessionScavenger set, using defaults
- 17:26:06.484 [scouter.server.http.HttpServer]  INFO  org.eclipse.jetty.server.session[149] - Scavenging every 600000ms
- 17:26:07.184 [scouter.server.http.HttpServer]  INFO  o.h.validator.internal.util.Version[27] - HV000001: Hibernate Validator 5.1.3.Final
- 17:26:07.319 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@5d700d70 to 127.0.0.1:6100
- 17:26:07.642 [scouter.server.http.HttpServer]  INFO  org.reflections.Reflections[232] - Reflections took 54 ms to scan 1 urls, producing 285 keys and 389 values 
- 17:26:07.932 [scouter.server.http.HttpServer]  INFO  o.e.j.server.handler.ContextHandler[788] - Started o.e.j.s.ServletContextHandler@4fd1ef5f{/,null,AVAILABLE}
- 17:26:07.954 [scouter.server.http.HttpServer]  INFO  o.e.jetty.server.AbstractConnector[280] - Started ServerConnector@65e29884{HTTP/1.1,[http/1.1]}{0.0.0.0:6180}
- 17:26:07.955 [scouter.server.http.HttpServer]  INFO  org.eclipse.jetty.server.Server[444] - Started @3009ms
- 17:26:08.313 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@428c4ba to 127.0.0.1:6100
- 17:26:08.327 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@441785db to 127.0.0.1:6100
- 17:52:07.135 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:4, scouterx.webapp.framework.client.net.TcpProxy@6e70fd44, stack:
- 17:52:07.202 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:4, scouterx.webapp.framework.client.net.TcpProxy@27b72be3, stack:
- 17:52:07.203 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:4, scouterx.webapp.framework.client.net.TcpProxy@4636fb3
- 17:52:07.204 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:2, scouterx.webapp.framework.client.net.TcpProxy@20809307, stack:
- 17:52:07.205 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:2, scouterx.webapp.framework.client.net.TcpProxy@7427b53c, stack:
- 17:52:07.206 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:2, scouterx.webapp.framework.client.net.TcpProxy@1507480c
- 17:52:07.215 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@1aff5857 to 127.0.0.1:6100
- 17:52:07.216 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@48c1cc51 to 127.0.0.1:6100
- 17:52:08.221 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:2, scouterx.webapp.framework.client.net.TcpProxy@50fc1e, stack:
- 17:52:08.222 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:2, scouterx.webapp.framework.client.net.TcpProxy@23f3d8e6, stack:
- 17:52:08.222 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:2, scouterx.webapp.framework.client.net.TcpProxy@3080a1cf
- 17:52:08.223 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@3ea1c94a to 127.0.0.1:6100
- 18:07:09.897 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:1, scouterx.webapp.framework.client.net.TcpProxy@3080a1cf, stack:
- 18:07:10.263 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:1, scouterx.webapp.framework.client.net.TcpProxy@1507480c, stack:
- 18:07:10.264 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:1, scouterx.webapp.framework.client.net.TcpProxy@5de3ffc2
- 18:07:10.273 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@4636fb3, stack:
- 18:07:10.273 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@1f2cedd0 to 127.0.0.1:6100
- 18:07:10.273 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@1149b1ba
- 18:07:10.276 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@57ac5486 to 127.0.0.1:6100
- 18:22:11.899 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@1149b1ba, stack:
- 18:22:12.257 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@5de3ffc2, stack:
- 18:22:12.257 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@2d1771
- 18:22:12.258 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@62170965
- 18:22:12.263 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@60f0dac3 to 127.0.0.1:6100
- 18:22:12.263 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@524c77f4 to 127.0.0.1:6100
- 18:37:13.901 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@62170965, stack:
- 18:37:14.281 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@2d1771, stack:
- 18:37:14.282 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@22af24f0
- 18:37:14.283 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@ed4c866
- 18:37:14.284 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@3be9b55e to 127.0.0.1:6100
- 18:37:14.285 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@5a150f18 to 127.0.0.1:6100
- 18:41:51.890 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@22af24f0, stack:
- 18:41:52.250 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@ed4c866, stack:
- 18:41:52.251 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@326b1db4
- 18:41:52.252 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@616fdf67
- 18:41:52.253 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@54abfff8 to 127.0.0.1:6100
- 18:41:52.254 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@502df769 to 127.0.0.1:6100
- 19:51:43.872 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@616fdf67, stack:
- 19:51:43.890 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@326b1db4, stack:
- 19:51:43.892 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@f78c939
- 19:51:43.893 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@789282f2
- 19:51:43.895 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@e279bfb to 127.0.0.1:6100
- 19:51:43.894 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@7d677a01 to 127.0.0.1:6100
- 21:51:56.260 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@f78c939, stack:
- 21:51:56.384 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@789282f2, stack:
- 21:51:56.405 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@178b5ea4
- 21:51:56.407 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@11ace9bf
- 21:51:57.883 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@2e85c25c to 127.0.0.1:6100
- 21:51:57.884 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@1c542792 to 127.0.0.1:6100
- 23:52:49.822 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@178b5ea4, stack:
- 23:52:49.938 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@11ace9bf, stack:
- 23:52:49.978 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@426c406c
- 23:52:49.987 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@552c1420
- 23:52:52.776 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@135ddbf6 to 127.0.0.1:6100
- 23:52:52.777 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@70a6e399 to 127.0.0.1:6100
- 01:53:43.406 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@426c406c, stack:
- 01:53:43.574 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@552c1420, stack:
- 01:53:43.574 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@6231e4b0
- 01:53:43.574 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@5eeec947
- 01:53:44.232 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@633b1dbf to 127.0.0.1:6100
- 01:53:44.233 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@4bb81333 to 127.0.0.1:6100
- 03:54:36.682 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@6231e4b0, stack:
- 03:54:36.736 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@5eeec947, stack:
- 03:54:36.736 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@795d812d
- 03:54:36.738 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@568398ec
- 03:54:38.495 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@2b7c6ba1 to 127.0.0.1:6100
- 03:54:38.498 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@16ee18f3 to 127.0.0.1:6100
- 05:52:30.593 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@568398ec, stack:
- 05:52:30.680 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@795d812d, stack:
- 05:52:30.684 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@7b177afa
- 05:52:30.685 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@3f02b78
- 05:52:33.465 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@70bddf20 to 127.0.0.1:6100
- 05:52:33.471 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@381d085c to 127.0.0.1:6100
- 09:30:07.352 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@7b177afa, stack:
- 09:30:07.460 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@3f02b78, stack:
- 09:30:07.463 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@7293a34b
- 09:30:07.466 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@65fc7cf3
- 09:30:09.721 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@333c93f to 127.0.0.1:6100
- 09:30:09.721 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@3afaefdb to 127.0.0.1:6100
- 20:59:30.439 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@7293a34b, stack:
- 20:59:30.755 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@65fc7cf3, stack:
- 20:59:30.755 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@3853a817
- 20:59:30.757 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@4333a309
- 20:59:31.211 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@5d692090 to 127.0.0.1:6100
- 20:59:31.212 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@685c18a9 to 127.0.0.1:6100
- 23:34:01.968 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@4333a309, stack:
- 23:34:02.030 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@3853a817, stack:
- 23:34:02.034 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@73a6712
- 23:34:02.039 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@5b74c42a
- 23:34:02.057 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@4693944a to 127.0.0.1:6100
- 23:34:02.058 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@6a53c419 to 127.0.0.1:6100
- 01:34:50.155 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@5b74c42a, stack:
- 01:34:50.528 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@73a6712, stack:
- 01:34:50.528 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@47f41a51
- 01:34:50.529 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@18e65c7a
- 01:34:50.531 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@13a2e74a to 127.0.0.1:6100
- 01:34:50.531 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@c1f9256 to 127.0.0.1:6100
- 03:35:36.882 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@47f41a51, stack:
- 03:35:37.327 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@18e65c7a, stack:
- 03:35:37.328 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@67259a2b
- 03:35:37.352 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@7137426b
- 03:35:37.354 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@6735bf1 to 127.0.0.1:6100
- 03:35:37.354 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@2bdca9c3 to 127.0.0.1:6100
- 05:36:23.773 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@67259a2b, stack:
- 05:36:23.774 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@7137426b, stack:
- 05:36:24.118 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@61b2effc
- 05:36:24.120 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@1f3254e
- 05:36:24.131 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@652edc37 to 127.0.0.1:6100
- 05:36:24.132 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@710e8a04 to 127.0.0.1:6100
- 06:34:44.970 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@61b2effc, stack:
- 06:34:45.330 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@1f3254e, stack:
- 06:34:45.332 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@2e11f67b
- 06:34:45.333 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@3a61ba54
- 06:34:45.335 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@32218c9b to 127.0.0.1:6100
- 06:34:45.335 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@743d9e6a to 127.0.0.1:6100
- 08:35:31.963 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@2e11f67b, stack:
- 08:35:32.346 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@3a61ba54, stack:
- 08:35:32.350 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@449a582c
- 08:35:32.350 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@6c7c0cf6
- 08:35:32.351 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@57c6ebec to 127.0.0.1:6100
- 08:35:32.351 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@6927f5d7 to 127.0.0.1:6100
- 10:36:18.971 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@449a582c, stack:
- 10:36:19.317 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@6c7c0cf6, stack:
- 10:36:19.318 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@5ea351bd
- 10:36:19.319 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@76c56d41
- 10:36:19.321 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@46755acd to 127.0.0.1:6100
- 10:36:19.322 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@483e6256 to 127.0.0.1:6100
- 11:34:41.966 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@5ea351bd, stack:
- 11:34:42.340 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@76c56d41, stack:
- 11:34:42.342 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@4ae2f549
- 11:34:42.382 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@5e730845
- 11:34:42.383 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@1c3d288f to 127.0.0.1:6100
- 11:34:42.383 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@3e8a11ec to 127.0.0.1:6100
- 18:15:35.938 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@4ae2f549, stack:
- 18:15:36.300 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@5e730845, stack:
- 18:15:36.310 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@5857ac0c
- 18:15:36.311 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@63f8dc19
- 18:15:36.313 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@341826f9 to 127.0.0.1:6100
- 18:15:36.313 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@586f3ee2 to 127.0.0.1:6100
- 09:15:09.052 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@63f8dc19, stack:
- 09:15:09.236 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@5857ac0c, stack:
- 09:15:09.237 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@70f343c4
- 09:15:09.263 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@698dd58e
- 09:15:13.246 [scouterx.webapp.framework.client.server.ServerManager]  ERROR s.w.framework.client.net.ClientTCP[65] - connect timed out
- 09:15:13.286 [XLogThread-127.0.0.1:6100-0]  ERROR s.w.framework.client.net.ClientTCP[65] - connect timed out
- 09:15:13.287 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@698dd58e, stack:
- 09:15:13.288 [XLogThread-127.0.0.1:6100-0]  ERROR s.w.f.c.thread.XLogRetrieveThread[93] - [XLogThread] at Server [id=-1082951330, name=SCOUTER-DEMO-LOCAL, ip=127.0.0.1, port=6100, delta=0, userId=__local, group=, version=2.6.2 2019-04-28 13:41 GMT], error:[TcpProxy.process] client socket closed.
-scouterx.webapp.framework.exception.ErrorStateBizException: [TcpProxy.process] client socket closed.
-	at scouterx.webapp.framework.exception.ErrorState.newBizException(ErrorState.java:75)
-	at scouterx.webapp.framework.client.net.TcpProxy.process(TcpProxy.java:179)
-	at scouterx.webapp.framework.client.net.TcpProxy.process(TcpProxy.java:131)
-	at scouterx.webapp.framework.client.net.TcpProxy.getSingle(TcpProxy.java:121)
-	at scouterx.webapp.framework.client.server.ServerManager.syncServerTime(ServerManager.java:84)
-	at scouterx.webapp.framework.client.server.ServerManager.run(ServerManager.java:72)
- 09:15:13.288 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@70f343c4, stack:
- 09:15:14.279 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@55cba7be
- 09:15:14.281 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@4446c2ef to 127.0.0.1:6100
- 09:15:14.288 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@1c81e160
- 09:15:14.290 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@79d30930 to 127.0.0.1:6100
- 09:15:14.296 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:1, scouterx.webapp.framework.client.net.TcpProxy@55cba7be, stack:
- 09:15:14.297 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@1c81e160, stack:
- 09:15:14.299 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@2d1e8add
- 09:15:14.300 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:1, scouterx.webapp.framework.client.net.TcpProxy@15564e7f
- 09:15:14.300 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:2, scouterx.webapp.framework.client.net.TcpProxy@1d28fd3c
- 09:15:14.301 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:3, scouterx.webapp.framework.client.net.TcpProxy@6f8b15cc
- 09:15:14.301 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:4, scouterx.webapp.framework.client.net.TcpProxy@361a2282
- 09:15:14.301 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:5, scouterx.webapp.framework.client.net.TcpProxy@1118b788
- 09:15:14.303 [ServerSessionObserverThread]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@4b83698a to 127.0.0.1:6100
- 09:15:14.318 [ServerSessionObserverThread]  INFO  s.w.f.c.thread.ServerSessionObserver[86] - Success re-login to SCOUTER-DEMO-LOCAL
- 09:15:15.298 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@bbf0c19 to 127.0.0.1:6100
- 09:15:15.300 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@c09d71d to 127.0.0.1:6100
- 09:15:16.304 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@baf52b7 to 127.0.0.1:6100
- 09:15:17.310 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@40165765 to 127.0.0.1:6100
- 09:15:17.310 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@18b62843 to 127.0.0.1:6100
- 09:30:20.175 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:4, scouterx.webapp.framework.client.net.TcpProxy@1118b788, stack:
- 09:30:20.213 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:4, scouterx.webapp.framework.client.net.TcpProxy@2d1e8add, stack:
- 09:30:20.226 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:4, scouterx.webapp.framework.client.net.TcpProxy@4b8dbc20
- 09:30:20.251 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:2, scouterx.webapp.framework.client.net.TcpProxy@15564e7f, stack:
- 09:30:20.255 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:2, scouterx.webapp.framework.client.net.TcpProxy@1d28fd3c, stack:
- 09:30:20.255 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:2, scouterx.webapp.framework.client.net.TcpProxy@794d38ec
- 09:30:22.252 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@4f7df8a9 to 127.0.0.1:6100
- 09:30:22.254 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@3bbeb9e7 to 127.0.0.1:6100
- 09:30:23.265 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:2, scouterx.webapp.framework.client.net.TcpProxy@6f8b15cc, stack:
- 09:30:23.265 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:2, scouterx.webapp.framework.client.net.TcpProxy@361a2282, stack:
- 09:30:23.265 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:2, scouterx.webapp.framework.client.net.TcpProxy@4a756ecd
- 09:30:23.266 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@6328b3f0 to 127.0.0.1:6100
- 10:35:42.469 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:1, scouterx.webapp.framework.client.net.TcpProxy@4b8dbc20, stack:
- 10:35:42.886 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:1, scouterx.webapp.framework.client.net.TcpProxy@794d38ec, stack:
- 10:35:42.962 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:1, scouterx.webapp.framework.client.net.TcpProxy@3cd1fa9b
- 10:35:43.012 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@4a756ecd, stack:
- 10:35:43.013 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@4e0e3f1b to 127.0.0.1:6100
- 10:35:43.057 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@73b26d21
- 10:35:43.107 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@3d0d9331 to 127.0.0.1:6100
- 11:17:34.118 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@3cd1fa9b, stack:
- 11:17:34.149 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@73b26d21, stack:
- 11:17:34.151 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@6844f646
- 11:17:34.153 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@5c6f815b
- 11:17:34.167 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@7afe1e15 to 127.0.0.1:6100
- 11:17:34.167 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@48dce357 to 127.0.0.1:6100
- 11:47:19.136 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@5c6f815b, stack:
- 11:47:19.513 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@6844f646, stack:
- 11:47:19.516 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@1ac5bf0e
- 11:47:19.517 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@7beaddf5
- 11:47:19.518 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@4b80337c to 127.0.0.1:6100
- 11:47:19.519 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@44a3d374 to 127.0.0.1:6100
- 11:48:27.510 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@1ac5bf0e, stack:
- 11:48:27.880 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@7beaddf5, stack:
- 11:48:27.901 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@b9aeb60
- 11:48:27.902 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@6b45160e
- 11:48:27.903 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@6141a3c5 to 127.0.0.1:6100
- 11:48:27.903 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@2473671f to 127.0.0.1:6100
- 11:58:05.382 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@b9aeb60, stack:
- 11:58:05.754 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@6b45160e, stack:
- 11:58:05.772 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@564b5d2c
- 11:58:05.794 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@9db0311
- 11:58:05.795 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@1c9a9f4a to 127.0.0.1:6100
- 11:58:05.796 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@53b9492d to 127.0.0.1:6100
- 11:59:22.486 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@9db0311, stack:
- 11:59:22.843 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@564b5d2c, stack:
- 11:59:22.877 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@f2469d1
- 11:59:22.906 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@5f2c1fb1
- 11:59:22.907 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@3050bcb5 to 127.0.0.1:6100
- 11:59:22.907 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@331fd01a to 127.0.0.1:6100
- 12:28:52.805 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@5f2c1fb1, stack:
- 12:28:53.172 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@f2469d1, stack:
- 12:28:53.173 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@6142f225
- 12:28:53.173 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@3fb15968
- 12:28:53.175 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@782b3f01 to 127.0.0.1:6100
- 12:28:53.178 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@7799e11b to 127.0.0.1:6100
- 12:52:33.683 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@6142f225, stack:
- 12:52:34.071 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@3fb15968, stack:
- 12:52:34.072 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@546dbb34
- 12:52:34.073 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@48f7b9ce
- 12:52:34.075 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@616d1018 to 127.0.0.1:6100
- 12:52:34.087 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@5252fca to 127.0.0.1:6100
- 13:02:55.975 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@48f7b9ce, stack:
- 13:02:56.414 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@546dbb34, stack:
- 13:02:56.424 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@174805ca
- 13:02:56.424 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@306a4c1f
- 13:02:56.425 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@36bae315 to 127.0.0.1:6100
- 13:02:56.425 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@8c3e230 to 127.0.0.1:6100
- 13:06:26.444 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@306a4c1f, stack:
- 13:06:26.812 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@174805ca, stack:
- 13:06:26.813 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@f374aed
- 13:06:26.813 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@7d0f132f
- 13:06:26.813 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@65376c3 to 127.0.0.1:6100
- 13:06:26.814 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@5178283b to 127.0.0.1:6100
- 13:21:29.600 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@7d0f132f, stack:
- 13:21:29.601 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@f374aed, stack:
- 13:21:29.950 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@33108cbf
- 13:21:29.950 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@51625596
- 13:21:29.952 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@3021a6e4 to 127.0.0.1:6100
- 13:21:29.952 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@24d52a8f to 127.0.0.1:6100
- 13:30:56.163 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@51625596, stack:
- 13:30:56.517 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@33108cbf, stack:
- 13:30:56.523 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@21c6c351
- 13:30:56.524 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@5f4e22f
- 13:30:56.527 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@31ef0ea2 to 127.0.0.1:6100
- 13:30:56.527 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@180c793c to 127.0.0.1:6100
- 13:33:25.439 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@5f4e22f, stack:
- 13:33:25.807 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@21c6c351, stack:
- 13:33:25.811 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@5b01414e
- 13:33:25.816 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@662ada4c to 127.0.0.1:6100
- 13:33:25.816 [scouterx.webapp.framework.client.model.AgentModelThread]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@40550df4
- 13:33:25.823 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@6ad0954
- 13:33:25.824 [scouterx.webapp.framework.client.model.AgentModelThread]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@75b1de27 to 127.0.0.1:6100
- 13:33:25.824 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@b21da5c to 127.0.0.1:6100
- 13:48:48.576 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:1, scouterx.webapp.framework.client.net.TcpProxy@6ad0954, stack:
- 13:48:48.934 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:1, scouterx.webapp.framework.client.net.TcpProxy@5b01414e, stack:
- 13:48:48.935 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:1, scouterx.webapp.framework.client.net.TcpProxy@44eda93c
- 13:48:48.935 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@40550df4, stack:
- 13:48:48.949 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@1cea4c22
- 13:48:48.949 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@3fd3fd04 to 127.0.0.1:6100
- 13:48:48.950 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@5539cb03 to 127.0.0.1:6100
- 13:53:56.413 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@1cea4c22, stack:
- 13:53:56.791 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@44eda93c, stack:
- 13:53:56.798 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@6e89d081
- 13:53:56.799 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@3bb08f59
- 13:53:56.800 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@5e418fa6 to 127.0.0.1:6100
- 13:53:56.800 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@3e464149 to 127.0.0.1:6100
- 18:58:00.400 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@3bb08f59, stack:
- 18:58:00.691 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@6e89d081, stack:
- 18:58:00.757 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@77cc791b
- 18:58:00.810 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@708391ff
- 18:58:00.928 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@57d7813b to 127.0.0.1:6100
- 18:58:00.928 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@6b792d3f to 127.0.0.1:6100
- 19:06:32.626 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@708391ff, stack:
- 19:06:32.627 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@77cc791b, stack:
- 19:06:32.993 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@540cbd4e
- 19:06:33.040 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@777a4e98
- 19:06:33.042 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@584cf28f to 127.0.0.1:6100
- 19:06:33.042 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@2594c36e to 127.0.0.1:6100
- 23:37:38.225 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@777a4e98, stack:
- 23:37:38.591 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@540cbd4e, stack:
- 23:37:38.643 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@31047266
- 23:37:38.644 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@342c9c10
- 23:37:38.645 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@5ab1f324 to 127.0.0.1:6100
- 23:37:38.645 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@161e5f7f to 127.0.0.1:6100
- 23:40:02.263 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@342c9c10, stack:
- 23:40:02.631 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@31047266, stack:
- 23:40:02.632 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@7f1a7864
- 23:40:02.632 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@27c9763f
- 23:40:02.634 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@7c965b5a to 127.0.0.1:6100
- 23:40:02.635 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@182e20c3 to 127.0.0.1:6100
- 00:45:19.237 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@7f1a7864, stack:
- 00:45:19.771 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@27c9763f, stack:
- 00:45:19.787 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@3bee77d9
- 00:45:19.787 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@48b2f3ca
- 00:45:19.788 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@2cb3b804 to 127.0.0.1:6100
- 00:45:19.788 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@171bf198 to 127.0.0.1:6100
- 06:57:06.373 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@3bee77d9, stack:
- 06:57:06.428 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@48b2f3ca, stack:
- 06:57:06.483 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@591934aa
- 06:57:06.485 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@40a75b23
- 06:57:08.724 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@29e653cc to 127.0.0.1:6100
- 06:57:08.724 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@2bf75294 to 127.0.0.1:6100
- 09:15:06.206 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@40a75b23, stack:
- 09:15:06.316 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@591934aa, stack:
- 09:15:06.317 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@63efb88c
- 09:15:06.317 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@7615c999
- 09:15:06.856 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@2bb01258 to 127.0.0.1:6100
- 09:15:06.861 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@47572cc7 to 127.0.0.1:6100
- 10:00:23.711 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@7615c999, stack:
- 10:00:24.068 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@63efb88c, stack:
- 10:00:24.116 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@3b9cdfe0
- 10:00:24.126 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@3dd3194d
- 10:00:24.128 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@2a6e49f5 to 127.0.0.1:6100
- 10:00:24.128 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@26304508 to 127.0.0.1:6100
- 14:44:08.547 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@7eb11956
- 14:44:08.555 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@7e2353 to 127.0.0.1:6100
- 16:32:20.667 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:1, scouterx.webapp.framework.client.net.TcpProxy@3b9cdfe0, stack:
- 16:32:20.678 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:1, scouterx.webapp.framework.client.net.TcpProxy@3dd3194d, stack:
- 16:32:20.684 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:1, scouterx.webapp.framework.client.net.TcpProxy@345bafec
- 16:32:20.684 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@7eb11956, stack:
- 16:32:20.685 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@25424b60
- 16:32:20.687 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@1fe52c5 to 127.0.0.1:6100
- 16:32:20.687 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@1f5249ed to 127.0.0.1:6100
- 16:32:49.790 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@25424b60, stack:
- 16:32:50.157 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@345bafec, stack:
- 16:32:50.157 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@42ece638
- 16:32:50.157 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@77f39005
- 16:32:50.159 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@6665113 to 127.0.0.1:6100
- 16:32:50.159 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@1a152e71 to 127.0.0.1:6100
- 16:41:11.929 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@42ece638, stack:
- 16:41:12.308 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@77f39005, stack:
- 16:41:12.350 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@7358d610
- 16:41:12.350 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@314803f4
- 16:41:12.351 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@7e48f4b7 to 127.0.0.1:6100
- 16:41:12.351 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@42531762 to 127.0.0.1:6100
- 16:50:33.734 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@7358d610, stack:
- 16:50:34.115 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@314803f4, stack:
- 16:50:34.144 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@5bb01060
- 16:50:34.169 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@294bd495
- 16:50:34.170 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@68e5cbc1 to 127.0.0.1:6100
- 16:50:34.170 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@1d91f666 to 127.0.0.1:6100
- 17:44:15.325 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@294bd495, stack:
- 17:44:15.586 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@5bb01060, stack:
- 17:44:15.587 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@5d38689b
- 17:44:15.587 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@6cb70183
- 17:44:15.590 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@646cd2c7 to 127.0.0.1:6100
- 17:44:15.591 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@3685e370 to 127.0.0.1:6100
- 18:45:55.522 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@5d38689b, stack:
- 18:45:55.918 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@6cb70183, stack:
- 18:45:55.927 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@3f04fd3a
- 18:45:55.954 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@411d6649
- 18:45:55.955 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@797982d8 to 127.0.0.1:6100
- 18:45:55.957 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@53ad9aca to 127.0.0.1:6100
- 19:12:30.705 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@411d6649, stack:
- 19:12:31.060 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@3f04fd3a, stack:
- 19:12:31.061 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@671b51dc
- 19:12:31.061 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@7c23225
- 19:12:31.062 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@65e35d12 to 127.0.0.1:6100
- 19:12:31.063 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@1ec5dfce to 127.0.0.1:6100
- 19:13:48.639 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@7c23225, stack:
- 19:13:48.985 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@671b51dc, stack:
- 19:13:48.988 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@34c0dd71
- 19:13:48.989 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@7d1681b9
- 19:13:48.989 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@b846ae9 to 127.0.0.1:6100
- 19:13:48.989 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@484cb381 to 127.0.0.1:6100
- 19:14:55.526 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@7d1681b9, stack:
- 19:14:55.907 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@34c0dd71, stack:
- 19:14:55.928 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@75e48ee5
- 19:14:55.929 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@1d4122a6
- 19:14:55.930 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@a105686 to 127.0.0.1:6100
- 19:14:55.930 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@2d4aa56f to 127.0.0.1:6100
+ 19:52:39.267 [scouter.server.http.HttpServer]  INFO  org.eclipse.jetty.util.log[192] - Logging initialized @1454ms to org.eclipse.jetty.util.log.Slf4jLog
+ 19:52:39.311 [scouter.server.http.HttpServer]  INFO  scouterx.webapp.main.WebAppMain[270] - scouter webapp starting! Run-Mode:Embedded
+ 19:52:39.330 [scouter.server.http.HttpServer]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@434b5826
+ 19:52:39.334 [scouter.server.http.HttpServer]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@6c9dc3e7 to 127.0.0.1:6100
+ 19:52:39.349 [scouter.server.http.HttpServer]  INFO  s.w.framework.client.net.TcpProxy[110] - TcpProxy closed : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@434b5826, stack:
+ 19:52:39.351 [scouter.server.http.HttpServer]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:0, scouterx.webapp.framework.client.net.TcpProxy@7660816f
+ 19:52:39.351 [scouter.server.http.HttpServer]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:1, scouterx.webapp.framework.client.net.TcpProxy@34195104
+ 19:52:39.351 [scouter.server.http.HttpServer]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:2, scouterx.webapp.framework.client.net.TcpProxy@7eb8c74e
+ 19:52:39.351 [scouter.server.http.HttpServer]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:3, scouterx.webapp.framework.client.net.TcpProxy@350dffd8
+ 19:52:39.351 [scouter.server.http.HttpServer]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:4, scouterx.webapp.framework.client.net.TcpProxy@47946bef
+ 19:52:39.351 [scouter.server.http.HttpServer]  INFO  s.w.framework.client.net.TcpProxy[58] - TcpProxy created : pool-size:5, scouterx.webapp.framework.client.net.TcpProxy@397b9368
+ 19:52:39.353 [scouter.server.http.HttpServer]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@56021c04 to 127.0.0.1:6100
+ 19:52:39.359 [scouter.server.http.HttpServer]  INFO  scouterx.webapp.main.WebAppMain[223] - Successfully log in to 127.0.0.1:6100
+ 19:52:39.361 [scouterx.webapp.framework.client.model.AgentModelThread]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@7d9ac822 to 127.0.0.1:6100
+ 19:52:39.367 [scouterx.webapp.framework.client.model.AgentModelThread]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@7762a352 to 127.0.0.1:6100
+ 19:52:39.464 [scouter.server.http.HttpServer]  INFO  org.eclipse.jetty.server.Server[372] - jetty-9.4.6.v20170531
+ 19:52:39.493 [scouter.server.http.HttpServer]  INFO  o.e.j.server.AbstractNCSARequestLog[230] - Opened /Users/addpage/Dev/quick-starters/performance-monitoring/scouter/demo/demo-env/scouter/server/logs/http-request-2021_10_26.log
+ 19:52:39.499 [scouter.server.http.HttpServer]  INFO  org.eclipse.jetty.server.session[364] - DefaultSessionIdManager workerName=node0
+ 19:52:39.500 [scouter.server.http.HttpServer]  INFO  org.eclipse.jetty.server.session[369] - No SessionScavenger set, using defaults
+ 19:52:39.502 [scouter.server.http.HttpServer]  INFO  org.eclipse.jetty.server.session[149] - Scavenging every 660000ms
+ 19:52:40.171 [scouter.server.http.HttpServer]  INFO  o.h.validator.internal.util.Version[27] - HV000001: Hibernate Validator 5.1.3.Final
+ 19:52:40.317 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@8a844d3 to 127.0.0.1:6100
+ 19:52:40.570 [scouter.server.http.HttpServer]  INFO  org.reflections.Reflections[232] - Reflections took 55 ms to scan 1 urls, producing 285 keys and 389 values 
+ 19:52:40.824 [scouter.server.http.HttpServer]  INFO  o.e.j.server.handler.ContextHandler[788] - Started o.e.j.s.ServletContextHandler@1e2af53{/,null,AVAILABLE}
+ 19:52:40.849 [scouter.server.http.HttpServer]  INFO  o.e.jetty.server.AbstractConnector[280] - Started ServerConnector@22ce2e3c{HTTP/1.1,[http/1.1]}{0.0.0.0:6180}
+ 19:52:40.850 [scouter.server.http.HttpServer]  INFO  org.eclipse.jetty.server.Server[444] - Started @3039ms
+ 19:52:41.317 [scouterx.webapp.framework.client.server.ServerManager]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@485a2edd to 127.0.0.1:6100
+ 19:52:41.321 [XLogThread-127.0.0.1:6100-0]  INFO  s.w.framework.client.net.ClientTCP[62] - Connected scouterx.webapp.framework.client.net.ClientTCP@3e8291be to 127.0.0.1:6100

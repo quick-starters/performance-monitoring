@@ -10800,3 +10800,21 @@ Caused by: org.hsqldb.HsqlException: integrity constraint violation: unique cons
 	at org.hsqldb.Session.executeCompiledStatement(Unknown Source)
 	at org.hsqldb.Session.execute(Unknown Source)
 	... 73 more
+Oct 26, 2021 7:52:27 PM org.apache.coyote.AbstractProtocol pause
+정보: Pausing ProtocolHandler ["http-bio-8080"]
+Oct 26, 2021 7:52:28 PM org.apache.coyote.AbstractProtocol pause
+정보: Pausing ProtocolHandler ["ajp-bio-8009"]
+Oct 26, 2021 7:52:28 PM org.apache.catalina.core.StandardService stopInternal
+정보: Stopping service Catalina
+Oct 26, 2021 7:52:28 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesJdbc
+심각: The web application [/jpetstore] registered the JDBC driver [org.hsqldb.jdbc.JDBCDriver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+Oct 26, 2021 7:52:28 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesThreads
+심각: The web application [/jpetstore] appears to have started a thread named [HSQLDB Timer @3cfdbb80] but has failed to stop it. This is very likely to create a memory leak.
+Oct 26, 2021 7:52:28 PM org.apache.coyote.AbstractProtocol stop
+정보: Stopping ProtocolHandler ["http-bio-8080"]
+Oct 26, 2021 7:52:28 PM org.apache.coyote.AbstractProtocol stop
+정보: Stopping ProtocolHandler ["ajp-bio-8009"]
+Oct 26, 2021 7:52:28 PM org.apache.coyote.AbstractProtocol destroy
+정보: Destroying ProtocolHandler ["http-bio-8080"]
+Oct 26, 2021 7:52:28 PM org.apache.coyote.AbstractProtocol destroy
+정보: Destroying ProtocolHandler ["ajp-bio-8009"]
