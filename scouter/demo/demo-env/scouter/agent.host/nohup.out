@@ -8,4 +8,4 @@
  
 Configure -Dscouter.config=./conf/scouter.conf
 Scouter Host Agent Version 1.7.1 2017-06-25 07:48 GMT
-System JRE version : 11.0.12
+System JRE version : 1.8.0_221
