@@ -6,7 +6,7 @@
 
 
 
-### [데모 설치](https://github.com/scouter-project/scouter/blob/master/scouter.document/main/Quick-Start_kr.md) 
+### 데모 설치 
 
 1. 통합 데모 환경 및 클라이언트 프로그램 다운로드
 2. 압축 파일 해제 - **이것으로 설치 완료!**
@@ -39,3 +39,11 @@
 
 
 ![image-20211022164556088](/Users/addpage/Library/Application Support/typora-user-images/image-20211022164556088.png)
+
+
+
+
+
+## 참고
+
+- [Scouter Quick Start](https://github.com/scouter-project/scouter/blob/master/scouter.document/main/Quick-Start_kr.md)
