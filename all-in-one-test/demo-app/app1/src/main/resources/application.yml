@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: demo-app-1
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: prometheus
+  metrics:
+    tags:
+      application: ${spring.application.name}
