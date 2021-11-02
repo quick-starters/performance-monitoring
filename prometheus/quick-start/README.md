@@ -102,7 +102,7 @@ management:
 http://localhost:8080/actuator/prometheus
 ```
 
-![image-20211102203613487](/Users/addpage/Library/Application Support/typora-user-images/image-20211102203613487.png)
+![image-20211102203613487](./images/image-20211102203613487.png)
 
 
 
@@ -173,7 +173,7 @@ scrape_configs:
 모니터링 지표 수집을 위한 기본적인 준비는 완료되었다.
 브라우저를 통해서 `localhost:9090`에 접속하여 아래와 같은 Prometheus 웹 화면이 확인되면 된다.
 
-![image-20211102125006136](/Users/addpage/Library/Application Support/typora-user-images/image-20211102125006136.png)
+![image-20211102125006136](./images/image-20211102125006136.png)
 
 이 웹 화면에서 Prometheus의 조회 쿼리를 테스트해볼 수 있고 추가적인 설정을 통해서 지표 기록 및 알림 상태 등을 확인할 수 있다. 하지만 이 Prometheus 웹 화면을 사용할 일은 거의 없다. Grafana라는 훌륭한 오픈소스 대시보드가 있기 때문이다.
 
@@ -203,7 +203,7 @@ $ docker run -d --name=grafana -p 3000:3000 grafana/grafana
 
 기본 관리자 계정은 `ID: admin`, `PW: admin`이다. 로그인에 성공하면 Grafana에서 다음 단계를 위한 가이드를 보여줄 것이다.
 
-![image-20211102205341601](/Users/addpage/Library/Application Support/typora-user-images/image-20211102205341601.png)
+![image-20211102205341601](./images/image-20211102205341601.png)
 
 
 
@@ -211,13 +211,13 @@ $ docker run -d --name=grafana -p 3000:3000 grafana/grafana
 
 왼쪽 사이드메뉴의 `Configuration > Data sources > Add data source` 버튼을 클릭하여 데이터 소스 추가 화면으로 넘어간 후 `Time series databases` 탭에서 `Prometheus` 선택해주자.
 
-![image-20211102205445466](/Users/addpage/Library/Application Support/typora-user-images/image-20211102205445466.png)
+![image-20211102205445466](./images/image-20211102205445466.png)
 
 
 
 원하는 이름으로 `Name` 필드를 작성하고 아래 HTTP 탭의 `URL` 필드에서는 조금 전에 설치하여 실행한 Prometheus의 URL을 입력한다. Save & Test 후 별 문제가 없다면 Success 가 될 것이다.
 
-![image-20211102205601705](/Users/addpage/Library/Application Support/typora-user-images/image-20211102205601705.png)
+![image-20211102205601705](./images/image-20211102205601705.png)
 
 
 
