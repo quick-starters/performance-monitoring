@@ -1,0 +1,26 @@
+version: "3.7"
+
+services:
+  controller:
+    container_name: ngrinder-controller
+    image: ngrinder/controller
+    volumes:
+      - ~/tmp/ngrinder-controller:/opt/ngrinder-controller
+    ports:
+      - "18080:80" # Default controller web UI port
+      - "16001:16001" # agents connect to the controller cluster thorugh these port
+      - "12000-12009:12000-12009" # controllers allocate stress tests through these ports
+  agent-1:
+    container_name: ngrinder-agent-1
+    image: ngrinder/agent
+    depends_on:
+      - controller
+    links:
+      - controller
+  agent-2:
+    container_name: ngrinder-agent-2
+    image: ngrinder/agent
+    depends_on:
+      - controller
+    links:
+      - controller
