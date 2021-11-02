@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: demo-spring-web-app
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "prometheus" # expose 할 endpoint 설정
+  metrics:
+    tags:
+      application: ${spring.application.name}
