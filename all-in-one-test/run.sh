@@ -7,12 +7,12 @@ docker volume rm $(docker volume ls -q)
 
 # Build demo-apps
 cd demo-app
-#./gradlew clean bootBuildImage
+./gradlew bootBuildImage
 
 # Docker compose up
 cd ..
 docker compose \
+  -f pinpoint/docker-compose.yml \
   -f ngrinder/docker-compose.yml \
-  -f demo-app/docker/docker-compose.yml \
   -f prometheus-grafana/docker-compose.yml --project-directory ./prometheus-grafana \
   up -d
