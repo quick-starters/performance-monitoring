@@ -8,6 +8,6 @@ class TestController {
 
     @GetMapping("/simple")
     fun simple(): String {
-        return "simple"
+        return "success"
     }
 }
